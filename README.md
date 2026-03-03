@@ -10,7 +10,7 @@
 🔗 **Live Demo:**  
 [Click here to view the deployed app](https://calendar-booking-two.vercel.app/)
 
-_Planned: a deployed **frontend-only** demo. For the full flow (setting availability and booking), you must run the backend locally – see “How to run locally” below._
+_The API runs on Render’s free tier and may take 30–60 seconds to respond after idle; the page will load once it’s awake._
 
 ## Project Specifications
 
@@ -111,9 +111,10 @@ npm run build
 npm run preview
 ```
 
-For portfolio purposes, the typical setup is:
+For deployment:
 
-- Deploy the **frontend** (optional) on Vercel/Netlify/Render (static build from `frontend/dist`).
-- Run the **backend** locally on your machine at `http://localhost:3001` when you demo the app.
+- Frontend is deployed on Vercel (static build from `frontend/dist`).
+- Backend is deployed as a Node service on Render (Express app from `backend`).
+- In production, the frontend uses `VITE_API_URL` to talk to the Render API.
 
 If you later deploy the backend as well, point the frontend to the deployed API URL (e.g. via `VITE_API_URL`) and rebuild.
