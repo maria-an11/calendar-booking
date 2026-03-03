@@ -19,7 +19,14 @@ import { sendBookingConfirmation } from "./email";
 const app = express();
 const PORT = process.env.PORT || 3001;
 
-app.use(cors({ origin: "http://localhost:5173" }));
+app.use(
+  cors({
+    origin: [
+      "http://localhost:5173",
+      "https://calendar-booking-two.vercel.app",
+    ],
+  }),
+);
 app.use(express.json());
 
 app.get("/", (req, res) => {
