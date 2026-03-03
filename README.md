@@ -8,7 +8,7 @@
 - **Backend (Express) default port:** 3001
 
 🔗 **Live Demo:**  
-[Click here to view the deployed app](https://placeholder.vercel.app/) _to be added_
+[Click here to view the deployed app](https://calendar-booking-two.vercel.app/)
 
 _Planned: a deployed **frontend-only** demo. For the full flow (setting availability and booking), you must run the backend locally – see “How to run locally” below._
 
